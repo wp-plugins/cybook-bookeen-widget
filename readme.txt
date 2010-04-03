@@ -39,9 +39,15 @@ Each instance of the widget can only display one image, but you can create as ma
 
 = How do I change the alignment? =
 
-This can be done with CSS:
+This can be done with CSS.  Depending on your WordPress theme, one of these methods below will work, though you may have to experiment a little to find out which one.
 
-`.cybookbookeen { text-align: center; }`
+For the last one with margin top, right, bottom, and left, replace the 0's with a number, for example 10px, where the px stands for pixels.  As you increase or decrease a side, the Ereader will shift position enabling you to get the perfect spacing in you sidebar.  Don't forget that you can use negative numbers too, like -10px.  Experiment with the numbers and refresh your website to see what way the Ereader moves in your sidebar.  Keep doing this until its just right!) :
+
+`.cybookbookeen { text-align: center; }
+.cybookbookeen { margin:0 auto; }
+.cybookbookeen { margin:0 auto; text-align: center; }
+.cybookbookeen { margin:0 auto; text-align: left; }
+.cybookbookeen { margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; }`
 
 == Screenshots ==
 
